@@ -15,5 +15,11 @@ class Solution:
             dfs(node.left)
             dfs(node.right)
 
+        #postorderTraversal
+            dfs(node.left)
+            dfs(node.right)
+            result.append(node.val)
+ 
+
         dfs(root)
         return result

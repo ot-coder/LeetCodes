@@ -3,7 +3,7 @@ class ListNode:
         self.val = x
         self.next = None
 
-        
+# Intuitive solution to traverse both lists instead of appending
 class Solution:
     def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
         A, B = headA, headB

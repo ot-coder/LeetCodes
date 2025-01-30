@@ -21,4 +21,21 @@ class Solution:
                 result = word
         
         return result
-        
+    
+''''
+class Solution:
+    def mostCommonWord(self, paragraph: str, banned: List[str]) -> str:
+        cleaned = re.sub(r'[!?\',;.]', ' ', paragraph.lower())
+    
+
+        words = cleaned.split()
+        word_counts = Counter(words)
+    
+
+        for banned_word in banned:
+            if banned_word in word_counts:
+                del word_counts[banned_word]
+    
+  
+        return max(word_counts.items(), key=lambda x: x[1])[0]
+        '''
